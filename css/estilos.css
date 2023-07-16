@@ -1,0 +1,299 @@
+/* Estilos generales */
+html {
+  background-color: #000000;
+}
+
+body {
+  width: 1000px;
+  height: 950px;
+  margin: auto;
+}
+
+/* Estilos de la barra de navegación */
+#navbar {
+  width: 1000px;
+  height: 100px;
+}
+
+/* Estilos de los boxes en el navbar */
+#box1,
+#box2,
+#box3,
+#box4,
+#box5 {
+  width: 200px;
+  height: 100px;
+  float: left;
+  background-color: #444444;
+  overflow: hidden;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  display: flex; /* Aplicamos flexbox para centrar contenido */
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+}
+
+/* Estilos de los enlaces dentro de los boxes */
+#box1 a,
+#box2 a,
+#box3 a,
+#box4 a,
+#box5 a {
+  display: block; /* Convertimos los enlaces en elementos de bloque para que ocupen todo el espacio del box */
+  text-decoration: none; /* Quitamos el subrayado del enlace */
+  color: #74e0af; /* Establecemos el color celeste para el enlace */
+  padding: 26px;
+}
+
+/* Estilos del header */
+#header {
+  width: 1000px;
+  height: 300px;
+  background-color: #333333;
+}
+
+/* Estilos del banner */
+#banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 800px;
+  height: 300px;
+  float: left;
+  color: white;
+}
+
+/* Estilos de los enlaces dentro del banner */
+#banner a {
+  color: #cccccc;
+}
+
+/* Estilos del contenedor de imágenes */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos de las imágenes en el contenedor */
+.image-container img {
+  width: 90px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Estilos del logo, login y form */
+#logo,
+#login,
+#form {
+  width: 200px;
+  height: 100px;
+  float: left;
+  background-color: #8e8d8d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos del formulario */
+#form {
+  background-color: #444444;
+}
+
+#logo {
+  background-color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+/* Estilos de los botones de login y register */
+.login-button {
+  background-color: #003e2b;
+  color: #cccccc;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+  color: #ffffff;
+}
+
+.register-button {
+  background-color: #cccccc;
+  color: #003e2b;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-button:hover {
+  background-color: #8e8d8d;
+  color: #74e0af;
+}
+
+/* Estilos de la imagen */
+#imagen {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Estilos del contenido principal */
+#main {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+}
+
+/* Estilos del aside izquierdo */
+#aside-left {
+  width: 200px;
+  height: 500px;
+  background-color: #444444;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 0px 20px 0px 20px;
+}
+
+/* Estilos del perfil del autor */
+.author-profile {
+  margin-top: 20px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilos del artículo */
+#article {
+  font-family: "Roboto", sans-serif;
+  width: 500px;
+  height: 500px;
+  background-color: #222222;
+  color: #cccccc;
+  padding: 0px 20px 0px 20px;
+}
+
+#article-form {
+  font-family: "Roboto", sans-serif;
+  width: 500px;
+  height: 500px;
+  background-color: #222222;
+  color: #cccccc;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Agregado para centrar horizontalmente */
+}
+
+#article-form form {
+  display: flex;
+  flex-direction: column; /* Mostrar los elementos uno debajo del otro */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centrar horizontalmente */
+}
+
+#article-form input {
+  display: block; /* Mostrar cada input en una línea separada */
+  margin-bottom: 10px; /* Espacio entre los campos de entrada */
+  width: 100%; /* Hacer que los inputs ocupen todo el ancho disponible */
+  padding: 10px; /* Añadir un poco de espacio interno alrededor del texto */
+  font-family: "Roboto", sans-serif; /* Tipo de letra */
+  font-size: 16px; /* Tamaño de letra */
+  border: none; /* Eliminar el borde */
+  background-color: #f2f2f2; /* Color de fondo */
+  color: #333333; /* Color del texto */
+}
+
+#article-form input::placeholder {
+  color: #666666; /* Color del texto del placeholder */
+}
+
+#article-form button {
+  background-color: #003e2b;
+  color: #cccccc;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#article-form button:hover {
+  background-color: #45a049;
+  color: #ffffff;
+}
+
+/* Estilos del aside derecho */
+#aside-right {
+  width: 300px;
+  height: 500px;
+  background-color: #8e8d8d;
+  padding: 0px 20px 0px 20px;
+}
+
+/* Estilos de la publicidad */
+.advertising {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.advertising img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Estilos del footer */
+footer {
+  width: 1000px;
+  height: 50px;
+  float: left;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+footer p {
+  padding: 0px 40px 0px 40px;
+}
+
+#imagen {
+  width: 100%;
+  height: 250px;
+}
